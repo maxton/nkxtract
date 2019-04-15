@@ -8,6 +8,11 @@ Currently the tool is hardcoded to look for keys in the registry for a single in
 the RELEASE instrument. If you want to extract a different instrument's samples, you will
 have to recompile this with the corresponding instrument name.
 
+## Usage
+```
+nkxtract.exe c:\path\to\samples.nkx c:\output\directory\
+```
+
 ## License
 This is free software, made available under the terms of the GNU GPL, version 3.
 See the included COPYING file for the full terms of the license.

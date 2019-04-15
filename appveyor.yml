@@ -27,12 +27,12 @@ build:
   parallel: true
   verbosity: minimal
 
-#after_build:
-# - >
-#   7z a nkxtract-%APPVEYOR_BUILD_VERSION%.zip 
-#   %APPVEYOR_BUILD_FOLDER%\nkxtract\bin\Release\nkxtract.exe
-#   %APPVEYOR_BUILD_FOLDER%\README.md
-#   %APPVEYOR_BUILD_FOLDER%\LICENSE.txt
+after_build:
+ - >
+   7z a nkxtract-%APPVEYOR_BUILD_VERSION%.zip 
+   %APPVEYOR_BUILD_FOLDER%\nkxtract\bin\Release\nkxtract.exe
+   %APPVEYOR_BUILD_FOLDER%\README.md
+   %APPVEYOR_BUILD_FOLDER%\COPYING
 
 artifacts:
-- path: nkxtract\bin\Release\nkxtract.exe
+- path: nkxtract-%APPVEYOR_BUILD_VERSION%.zip 
